@@ -28,7 +28,7 @@ return (
 <h1 className="text-4xl md:text-5xl font-extrabold text-mantrrBlue">Sell Books & Earn <span className="text-green-600">Up to 90%</span></h1>
 <p className="mt-4 text-gray-700 max-w-2xl mx-auto">Help students find the right books and courses — earn high commissions and get same-day payouts.</p>
 <div className="mt-6 flex items-center justify-center gap-4">
-<a href="https://wa.me/918000000000?text=Hi%20I%20want%20to%20start%20earning%20with%20Success%20Mantrr" target="_blank" className="bg-green-600 text-white px-6 py-3 rounded-lg shadow">Start Selling</a>
+<a href="https://wa.me/917684953285?text=Hi%20I%20want%20to%20start%20earning%20with%20Success%20Mantrr" target="_blank" className="bg-green-600 text-white px-6 py-3 rounded-lg shadow">Start Selling</a>
 <a href="#courses" className="border border-mantrrBlue text-mantrrBlue px-6 py-3 rounded-lg">Browse Courses</a>
 </div>
 </div>
@@ -47,7 +47,7 @@ return (
             Reach us on WhatsApp for quick support and opportunities.
           </p>
           <a
-            href="https://wa.me/918000000000?text=Hi%20I%20want%20to%20know%20more%20about%20SuccessMantrr"
+            href="https://wa.me/917684953285?text=Hi%20I%20want%20to%20know%20more%20about%20SuccessMantrr"
             target="_blank"
             rel="noreferrer"
             className="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700"

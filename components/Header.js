@@ -11,7 +11,7 @@ export default function Header() {
         {/* Logo + Name */}
         <Link href="/" className="flex items-center gap-3">
           <img src="/logo.svg" alt="Success Mantrr" className="w-10 h-10" />
-          <span className="text-lg md:text-xl font-bold text-mantrrBlue">
+          <span className="text-md md:text-xl font-bold text-mantrrBlue">
             Smart Savings <span className="text-green-600">by Success Mantrr</span>
           </span>
         </Link>
@@ -23,7 +23,7 @@ export default function Header() {
           <Link href="/about">About</Link>
           <Link href="/contact">Contact Us</Link>
           <a
-            href="https://wa.me/918000000000?text=Hi%20I%20am%20interested%20in%20earning%20with%20SuccessMantrr"
+            href="https://wa.me/7684953285?text=Hi%20I%20am%20interested%20in%20earning%20with%20SuccessMantrr"
             target="_blank"
             rel="noreferrer"
             className="ml-4 inline-block bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700"
@@ -47,7 +47,7 @@ export default function Header() {
             <Link href="/about">About</Link>
             <Link href="/contact">Contact Us</Link>
             <a
-              href="https://wa.me/918000000000?text=Hi%20I%20am%20interested%20in%20earning%20with%20SuccessMantrr"
+              href="https://wa.me/7684953285?text=Hi%20I%20am%20interested%20in%20earning%20with%20SuccessMantrr"
               target="_blank"
               rel="noreferrer"
               className="mt-2 inline-block bg-green-600 text-white px-4 py-2 rounded-lg text-center"

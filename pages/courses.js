@@ -1,45 +1,114 @@
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import BookModal from "../components/BookModal";
 
 const books = [
   {
     title: "MINI PACKAGE",
-    price: "Rs. 799",
-    features: ["Canva Mastery", "Lead Generation"],
-    img: "/books/mini.png",
+    rating: 3.2,
+    normalPrice: "₹999",
+    promoPrice: "₹799",
+    features: ["Affiliate Marketing", "Canva Mastery", "Lead Generation"],
+    img: "/Mini.png",
     waText: "Hi, I want to buy the MINI PACKAGE (Rs. 799).",
   },
   {
     title: "MARKETING PACKAGE",
-    price: "Rs. 1599",
-    features: ["Public Speaking", "Communication Skills", "Spoken English"],
-    img: "/books/marketing.png",
+    rating: 4.1,
+    normalPrice: "₹1499",
+    promoPrice: "₹1199",
+    features: [
+      "Affiliate Marketing",
+      "Canva Mastery",
+      "Lead Generation",
+      "Communication Skills",
+      "Public Speaking",
+      "Spoken English",
+    ],
+    img: "/Marketing.png",
     waText: "Hi, I want to buy the MARKETING PACKAGE (Rs. 1599).",
   },
   {
     title: "ADVANCE PACKAGE",
-    price: "Rs. 3999",
-    features: ["Instagram Mastery", "Reel Creation Mastery", "How to attract & influence"],
-    img: "/books/advance.png",
+   rating: 4.5,
+    normalPrice: "₹3499",
+    promoPrice: "₹2999",
+    features: [
+        "Affiliate Marketing",
+      "Canva Mastery",
+      "Lead Generation",
+      "Communication Skills",
+      "Public Speaking",
+      "Spoken English",
+      "Instagram Mastery",
+      "Reels Mastery",
+      "Attraction Marketing",
+      "Facebook Ads",
+      "Email Marketing",
+    ],
+    img: "/Advance.png",
     waText: "Hi, I want to buy the ADVANCE PACKAGE (Rs. 3999).",
   },
   {
     title: "BRANDING PACKAGE",
-    price: "Rs. 5999",
-    features: ["Facebook Ads Run", "How to send Email like professionals"],
-    img: "/books/branding.png",
+ rating: 4.3,
+     normalPrice: "₹5799",
+    promoPrice: "₹4999",
+    features: [
+          "Affiliate Marketing",
+      "Canva Mastery",
+      "Lead Generation",
+      "Communication Skills",
+      "Public Speaking",
+      "Spoken English",
+      "Instagram Mastery",
+      "Reels Mastery",
+      "Attraction Marketing",
+      "Facebook Ads",
+      "Email Marketing",
+      "All Advance Modules",
+      "Reselling Mastery",
+      "Entrepreneurship Basics",
+      "Team Building",
+    ],
+    img: "/Branding.png",
     waText: "Hi, I want to buy the BRANDING PACKAGE (Rs. 5999).",
   },
   {
     title: "PREMIUM PACKAGE",
-    price: "Rs. 9999",
-    features: ["Website Designing", "Finance"],
-    img: "/books/premium.png",
+ rating: 4.9,
+      normalPrice: "₹9999",
+    promoPrice: "₹8999",
+    features: [  "Affiliate Marketing",
+      "Canva Mastery",
+      "Lead Generation",
+      "Communication Skills",
+      "Public Speaking",
+      "Spoken English",
+      "Instagram Mastery",
+      "Reels Mastery",
+      "Attraction Marketing",
+      "Facebook Ads",
+      "Email Marketing",
+      "All Advance Modules",
+      "Reselling Mastery",
+      "Entrepreneurship Basics",
+      "Team Building",
+      "Personal Branding",
+      "Leadership Mastery",
+      "High-Ticket Sales",
+      "Advanced Funnel Building",
+      "Complete Success Bundle",
+    ],
+    img: "/Premium.png",
     waText: "Hi, I want to buy the PREMIUM PACKAGE (Rs. 9999).",
   },
 ];
 
 export default function Courses() {
+  const [selectedBook, setSelectedBook] = useState(null);
+
   return (
     <>
       <Header />
@@ -52,7 +121,7 @@ export default function Courses() {
             Choose a package and start your success journey today.
           </p>
 
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-1 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {books.map((book, idx) => (
               <div
                 key={idx}
@@ -61,34 +130,36 @@ export default function Courses() {
                 <img
                   src={book.img}
                   alt={book.title}
-                  className="w-40 h-56 object-cover rounded-md"
+                  className="w-50 h-86 object-cover rounded-md"
                 />
                 <h3 className="mt-4 text-xl font-bold text-purple-700">
                   {book.title}
                 </h3>
-                <p className="mt-2 text-lg font-semibold text-gray-800">
+                <p className="mt-1 text-2xl font-semibold text-gray-800">
                   {book.price}
                 </p>
-                <ul className="mt-4 text-gray-600 text-sm list-disc list-inside">
+                <ul className="mt-3 text-gray-600 text-md list-disc list-inside">
                   {book.features.map((f, i) => (
                     <li key={i}>{f}</li>
                   ))}
                 </ul>
-                <a
-                  href={`https://wa.me/918000000000?text=${encodeURIComponent(
-                    book.waText
-                  )}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-block bg-purple-600 text-white px-5 py-2 rounded-lg hover:bg-purple-700"
+                <button
+                  onClick={() => setSelectedBook(book)}
+                  className="mt-6 inline-block bg-purple-600 text-white px-12 py-2 rounded-lg hover:bg-purple-700"
                 >
                   Get Started
-                </a>
+                </button>
               </div>
             ))}
           </div>
         </div>
       </main>
+
+      {/* Modal */}
+      {selectedBook && (
+        <BookModal book={selectedBook} onClose={() => setSelectedBook(null)} />
+      )}
+
       <Footer />
     </>
   );

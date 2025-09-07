@@ -1,85 +1,97 @@
-import { useState } from 'react'
-import { X, Share2 } from 'lucide-react'
+import { X } from "lucide-react";
 
+export default function BookModal({ book, onClose }) {
+  if (!book) return null;
 
-export default function BookModal({ book, onClose }){
-const [flipped, setFlipped] = useState(false)
-if(!book) return null
+  // WhatsApp Number
+  const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER || "7684953285";
 
+  const whatsappLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
+    `Hi, I want to buy the ${book.title} from Success Mantrr. Please share details.`
+  )}`;
 
-// Update WA number below or use env var
-const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER || '918000000000'
-const whatsappLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hi, I want to buy the book ${book.title} from Success Mantrr. Please share purchase details.`)}`
+  return (
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-2 sm:p-4">
+      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl relative overflow-y-auto max-h-[90vh] animate-fadeIn">
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-gray-600 hover:text-black"
+        >
+          <X size={26} />
+        </button>
 
+        {/* Content */}
+        <div className="p-5 space-y-6">
+          {/* Image + Title */}
+          <div className="flex flex-col items-center text-center">
+            <img
+              src={book.img}
+              alt={book.title}
+              className="w-36 h-48 object-contain drop-shadow-md"
+            />
+            <h3 className="mt-3 text-lg sm:text-xl font-bold text-gray-800">
+              {book.title}
+            </h3>
+            <p className="text-sm text-gray-600 mt-1">
+              Rating: {book.rating}{" "}
+              <span className="text-yellow-500">
+                {"⭐".repeat(Math.round(book.rating))}
+              </span>
+            </p>
+            <p className="text-gray-500 text-lg line-through">
+              Direct Price: {book.normalPrice}
+            </p>
+            <p className="text-xl font-bold text-green-600 mt-1">
+              With Promo Code: {book.promoPrice}
+            </p>{" "}
+            <span className="text-sm text-gray-600 mt-1">
+              Use Promo Code <strong>Click</strong> Buy on WhatsApp
+            </span>
+          </div>
 
-return (
-<div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center p-4">
-<div className="w-full max-w-3xl">
-<div className="bg-white rounded-2xl overflow-hidden shadow-xl">
-<div className="flex items-start justify-between p-4 border-b">
-<div className="flex items-center gap-3">
-<img src={book.img} alt={book.title} className="w-16 h-20 object-contain"/>
-<div>
-<h3 className="text-lg font-bold text-mantrrBlue">{book.title}</h3>
-<p className="text-sm text-gray-500">Rating: {book.rating} ⭐</p>
-</div>
-</div>
-<div className="flex items-center gap-2">
-<button onClick={() => setFlipped(!flipped)} className="px-3 py-1 border rounded text-sm">Flip</button>
-<button onClick={onClose} className="p-2 rounded hover:bg-gray-100"><X/></button>
-</div>
-</div>
+          {/* Features */}
+          <div>
+            <h4 className="font-semibold text-gray-800 mb-2 text-center sm:text-left">
+              What’s Inside:
+            </h4>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-700 text-sm">
+              {book.features && book.features.length > 0 ? (
+                book.features.map((f, i) => (
+                  <li
+                    key={i}
+                    className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg shadow-sm"
+                  >
+                    <span className="text-green-600">✓</span> {f}
+                  </li>
+                ))
+              ) : (
+                <li className="text-gray-400 italic">No features listed</li>
+              )}
+            </ul>
+          </div>
 
-
-<div className="p-6 flip-container">
-<div className={`flip-card ${flipped ? 'is-flipped' : ''}`}>
-{/* FRONT */}
-<div className="flip-front">
-<p className="text-gray-700">
-Complete coverage of syllabus, practice questions, and concise revision notes — perfect for quick preparation.
-</p>
-
-
-<ul className="mt-4 list-disc pl-5 text-sm text-gray-600">
-<li>Clear explanations with examples</li>
-<li>Full practice sets & previous year questions</li>
-<li>Shortcuts & tricks for fast solving</li>
-</ul>
-
-
-<div className="mt-6 flex gap-3">
-<a href={whatsappLink} target="_blank" className="inline-block bg-green-600 text-white px-4 py-2 rounded-lg shadow">Buy on WhatsApp</a>
-<button onClick={() => { navigator.clipboard.writeText(whatsappLink); alert('WhatsApp link copied') }} className="px-4 py-2 border rounded">Copy Link</button>
-</div>
-</div>
-
-
-{/* BACK */}
-<div className="flip-back mt-2">
-<h4 className="font-semibold text-mantrrBlue">Reviews & Benefits</h4>
-<div className="mt-3 text-sm text-gray-600">
-<p>⭐ 4.3 — Rated by thousands of students for clarity and results.</p>
-<p className="mt-2">Benefits: Boosts accuracy, saves time with curated notes, and includes mini-mock tests.</p>
-</div>
-
-
-<div className="mt-4">
-<h5 className="font-medium">Student Comments</h5>
-<div className="mt-2 text-sm text-gray-600 italic">“Helped me improve my score dramatically.” — Aashish</div>
-<div className="mt-2 text-sm text-gray-600 italic">“Best revision guide for last-minute prep.” — Priya</div>
-</div>
-
-
-<div className="mt-6">
-<a href={whatsappLink} target="_blank" className="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg shadow">Ask to Buy</a>
-</div>
-</div>
-</div>
-</div>
-
-
-</div>
-</div>
-</div>
-)
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href={book.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-3 rounded-lg text-center shadow"
+            >
+              Buy Now
+            </a>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-block bg-green-500 hover:bg-green-600 text-white font-medium px-5 py-3 rounded-lg text-center shadow"
+            >
+              Buy on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
