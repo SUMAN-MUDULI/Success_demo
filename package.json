@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3002",
+    "dev": "next dev -p 5001",
     "build": "next build",
   
     "lint": "next lint",
-    "start": "HOST=0.0.0.0 PORT=3002 react-scripts start"
+    "start":  "next start -p 5002"
   },
   "dependencies": {
     "i18next": "^25.5.0",
