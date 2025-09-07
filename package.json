@@ -6,11 +6,7 @@
     "dev": "next dev -p 5001",
     "build": "next build",
     "lint": "next lint",
-<<<<<<< HEAD
     "start": "next start -p 5002"
-=======
-    "start":  "next start -p 5002"
->>>>>>> 86cf4a1b938706bc6feaf958923a3f028c9d19b3
   },
   "dependencies": {
     "i18next": "^25.5.0",
