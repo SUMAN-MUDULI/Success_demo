@@ -18,9 +18,10 @@ export default function Contact() {
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat.
           </p>
-          <button className="bg-red-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-red-600 transition">
-            Contact Us
-          </button>
+        
+            <a href="https://wa.me/917684953285?text=Hi%20Suman%20Bhai%20please%20Help" target="_blank" className="bg-red-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-red-600 transition">Contact Us</a>
+       
+  
         </div>
 
         {/* Right Side - Image */}

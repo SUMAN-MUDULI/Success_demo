@@ -52,7 +52,7 @@ export default function Header() {
               rel="noreferrer"
               className="mt-2 inline-block bg-green-600 text-white px-4 py-2 rounded-lg text-center"
             >
-              WhatsApp
+            WhatsApp
             </a>
           </div>
         </div>

@@ -25,11 +25,11 @@ return (
 {/* HERO */}
 <section id="home" className="bg-gradient-to-r from-blue-50 via-green-50 to-orange-50 py-20">
 <div className="max-w-6xl mx-auto px-6 text-center">
-<h1 className="text-4xl md:text-5xl font-extrabold text-mantrrBlue">Sell Books & Earn <span className="text-green-600">Up to 90%</span></h1>
-<p className="mt-4 text-gray-700 max-w-2xl mx-auto">Help students find the right books and courses — earn high commissions and get same-day payouts.</p>
+<h1 className="text-4xl md:text-5xl font-extrabold text-mantrrBlue">Sell package & Earn <span className="text-green-600">Up to 90% Commission</span></h1>
+<p className="mt-4 text-gray-700 max-w-2xl mx-auto">Recommend trusted package & courses. Beginner friendly — same-day payouts.</p>
 <div className="mt-6 flex items-center justify-center gap-4">
-<a href="https://wa.me/917684953285?text=Hi%20I%20want%20to%20start%20earning%20with%20Success%20Mantrr" target="_blank" className="bg-green-600 text-white px-6 py-3 rounded-lg shadow">Start Selling</a>
-<a href="#courses" className="border border-mantrrBlue text-mantrrBlue px-6 py-3 rounded-lg">Browse Courses</a>
+<a href="https://wa.me/917684953285?text=Hi%20I%20want%20to%20start%20earning%20with%20Success%20Mantrr" target="_blank" className="bg-green-600 text-white px-6 py-3 rounded-lg shadow">Start Now</a>
+<a href="https://youtu.be/o_4XYUFpCTk?si=DrF8jjTHmbjMdijM" className="border border-mantrrBlue text-mantrrBlue px-6 py-3 rounded-lg">Learn How It Works</a>
 </div>
 </div>
 </section>

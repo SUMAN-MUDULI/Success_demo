@@ -32,8 +32,7 @@ export function WhySuccessMantrr() {
           <div className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition">
             <h4 className="font-semibold text-orange-500">Beginner Friendly</h4>
             <p className="mt-2 text-sm text-gray-600">
-              Share links on WhatsApp, Instagram or your page — no technical
-              skills needed.
+     No technical skills needed — share links easily.
             </p>
           </div>
         </div>

@@ -73,14 +73,7 @@ export default function BookModal({ book, onClose }) {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href={book.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-3 rounded-lg text-center shadow"
-            >
-              Buy Now
-            </a>
+            
             <a
               href={whatsappLink}
               target="_blank"
