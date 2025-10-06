@@ -112,7 +112,7 @@ export function BookGrid({ onBookClick }) {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <h3 className="text-3xl font-bold text-center text-mantrrBlue mb-8">
-          Explore Books
+          Explore Package
         </h3>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
