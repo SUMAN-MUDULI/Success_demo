@@ -26,7 +26,7 @@ export default function BookSlider() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
         <h3 className="text-2xl font-semibold text-center text-mantrrBlue mb-6">
-          Top Selling Books
+          Top Selling Package
         </h3>
 
         {/* Scrolling Slider */}
