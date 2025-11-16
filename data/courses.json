@@ -1,0 +1,144 @@
+{
+  "courses": [
+    {
+      "slug": "affiliate-marketing",
+      "title": "Affiliate Marketing",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/16321411841703840289.png",
+    "id": 1
+    },
+    {
+      "slug": "canva-mastery",
+      "title": "Canva Mastery",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/21007687821703840354.png",
+    "id": 2
+    },
+    {
+      "slug": "lead-generation",
+      "title": "Lead Generation",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/18136170091703840311.png",
+    "id": 3
+    },
+    {
+      "slug": "communication-skills",
+      "title": "Communication Skills",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/9392038781703840406.png",
+    "id": 4
+    },
+    {
+      "slug": "public-speaking",
+      "title": "Public Speaking",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/15177398631703850848.png",
+    "id": 5
+    },
+    {
+      "slug": "spoken-english",
+      "title": "Spoken English",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/20515898441703840424.png",
+    "id": 6
+    },
+    {
+      "slug": "instagram-mastery",
+      "title": "Instagram Mastery",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/4980935531703840445.png",
+    "id": 7
+    },
+    {
+      "slug": "reels-mastery",
+      "title": "Reels Mastery",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/8509702511703840464.png",
+    "id": 8
+    },
+    {
+      "slug": "attraction-marketing",
+      "title": "Attraction Marketing",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/3524789841703840479.png",
+    "id": 9
+    },
+    {
+      "slug": "facebook-ads",
+      "title": "Facebook Ads",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/19460153541703840498.png",
+    "id": 10
+    },
+    {
+      "slug": "email-marketing",
+      "title": "Email Marketing",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/16209249611703840518.png",
+    "id": 11
+    },
+    {
+      "slug": "you-tube-mastery",
+      "title": "You Tube Mastery",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/3377646411721781640.png",
+    "id": 12
+    },
+    {
+      "slug": "reselling-mastery",
+      "title": "Reselling Mastery",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/10368749281703840538.png",
+    "id": 13
+    },
+    {
+      "slug": "sales-mastery",
+      "title": "Sales Mastery",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/18923978501722774813.png",
+    "id": 14
+    },
+    {
+      "slug": "team-building",
+      "title": "Team Building",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/img_team.png",
+    "id": 15
+    },
+    {
+      "slug": "personal-branding",
+      "title": "Personal Branding",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/img_branding.png",
+    "id": 16
+    },
+    {
+      "slug": "leadership-mastery",
+      "title": "Leadership Mastery",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/img_leadership.png",
+    "id": 17
+    },
+    {
+      "slug": "high-ticket-sales",
+      "title": "High-Ticket Sales",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/img_high_ticket.png",
+    "id": 18
+    },
+    {
+      "slug": "advanced-funnel-building",
+      "title": "Advanced Funnel Building",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/img_funnel.png",
+    "id": 19
+    },
+    {
+      "slug": "complete-success-bundle",
+      "title": "Complete Success Bundle",
+      "instructor": "By Success Mantrr",
+      "thumbnail": "https://successmantrr.com/backend/img/course/img_success_bundle.png",
+    "id": 20
+    }
+  ]
+}

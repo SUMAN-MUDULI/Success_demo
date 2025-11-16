@@ -33,7 +33,7 @@ return (
 
 <div>
 <h3 className="text-white font-semibold mb-3">Our Address</h3>
-<p className="text-sm">(+91) 7684953285</p>
+<p className="text-sm">(+91) 8342991246</p>
 <p className="text-sm">odisha, India</p>
 <p className="text-sm mt-2"><a href="mailto:SmartSavingsbySuccessMantrr@gmail.com" className="hover:text-white">SmartSavingsbySuccessMantrr@gmail.com</a></p>
 </div>

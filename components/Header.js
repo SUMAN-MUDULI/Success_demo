@@ -23,7 +23,7 @@ export default function Header() {
           <Link href="/about">About</Link>
           <Link href="/contact">Contact Us</Link>
           <a
-            href="https://wa.me/7684953285?text=Hi%20I%20am%20interested%20in%20earning%20with%20SuccessMantrr"
+            href="https://wa.me/8342991246?text=Hi%20I%20am%20interested%20in%20earning%20with%20SuccessMantrr"
             target="_blank"
             rel="noreferrer"
             className="ml-4 inline-block bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700"
@@ -47,7 +47,7 @@ export default function Header() {
             <Link href="/about">About</Link>
             <Link href="/contact">Contact Us</Link>
             <a
-              href="https://wa.me/7684953285?text=Hi%20I%20am%20interested%20in%20earning%20with%20SuccessMantrr"
+              href="https://wa.me/8342991246?text=Hi%20I%20am%20interested%20in%20earning%20with%20SuccessMantrr"
               target="_blank"
               rel="noreferrer"
               className="mt-2 inline-block bg-green-600 text-white px-4 py-2 rounded-lg text-center"

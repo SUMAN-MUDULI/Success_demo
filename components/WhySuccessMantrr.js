@@ -58,7 +58,7 @@ export function WhySuccessMantrr() {
         <p className="mt-4 text-gray-600 text-lg">
           Success Mantrr empowers students to build income streams by recommending
           books & courses. With{" "}
-          <span className="font-semibold text-green-600">up to 90% commissions</span>,{" "}
+          <span className="font-semibold text-green-600">up to 70% commissions</span>,{" "}
           <span className="font-semibold text-mantrrBlue">same-day payouts</span>, and
           beginner-friendly tools, it’s the easiest way for learners to earn while growing
           knowledge.
@@ -67,7 +67,7 @@ export function WhySuccessMantrr() {
           <div className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition">
             <h4 className="font-semibold text-green-600">High Commissions</h4>
             <p className="mt-2 text-sm text-gray-600">
-              Earn up to 90% when your referral purchases.
+              Earn up to 70% when your referral purchases.
             </p>
           </div>
           <div className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition">
